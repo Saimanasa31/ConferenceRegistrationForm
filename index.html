@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>CONFERENCE REGISTRATION FORM</h1>
+  <hr>
+  <div class="box">
+    <div class="container">
+      <form action="" id="form">
+
+        <div class="f1">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="in" placeholder="Enter name" required>
+        </div>
+
+        <div class="f2">
+          <label for="email">Email Address</label>
+          <input type="text" name="name" class="in" placeholder="Enter email" required>
+          </div>
+
+          <div class="f3">
+            <label for="phone">Phone Number</label>
+            <input type="tel" name="phone" class="in" placeholder="Enter phone number" required>
+          </div>
+
+          <div class="f4">
+            <label for="affiliation">Affiliation</label>
+            <input type="text"  name="affiliation" class="in" placeholder="Enter affiliation" required>
+          </div>
+          
+          <div class="f5">
+            <label for="dietary-preferances">Dietary Preferances</label>
+            <br>
+            <div class="c1"><input type="checkbox" name="dietary" value="vegetarian">
+              <label for="vegetarian">vegetarian</label><br>
+
+            <div class="c1"><input type="checkbox" name="dietary" value="vegan">
+              <label for="vegan">Vegan</label><br>
+
+              <div class="c1"><input type="checkbox" name="dietary" value="gluten-free">
+                <label for="gluten-free">Gluten-Free</label><br>
+
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="f6">
+          <label for="workshop">Preferred Workshop:</label>
+
+          <select id="workshop" name="workshop" required>
+               <option value="" selected disabled>Select Workshop</option>
+               <option value="workshop1">Mern Stack</option>
+               <option value="workshop2">Cyber Security</option>
+               <option value="workshop3">Data Science</option>
+
+          </select>
+        </div>
+        <div class="f7">
+          <label for="registration-type">Registration Type</label>
+          <input type="radio" id="general" name="registration-type" value="general">
+
+          <label for="general">General Attendee</label>
+          <input type="radio" id="student" name="registration-type" value="student">
+           
+          <label for="student">Student</label>
+          <input type="radio" id="vip" name="registration-type" value="vip">
+           
+          <label for="vip">VIP</label>
+        </div>
+
+        <p style="text-align: center;"><input type="submit" value="Submit"></p>
+
+      </form>
+    </div>
+
+</body>
+
+</html>
